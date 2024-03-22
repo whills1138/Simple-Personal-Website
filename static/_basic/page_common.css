@@ -1,0 +1,150 @@
+.image-title {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56%;
+    margin: 0%;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    float: left;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.title-text {
+    text-align: center;
+    text-shadow: 3px 3px 7px rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+@media screen and (min-width: 601px) {
+    .title-text {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title-text {
+        font-size: 1.2rem;
+    }
+}
+
+.intro-image {
+    height: 0;
+    width: 90%;
+    float: left;
+    padding-bottom: 57%;
+    margin: 3% 5%;
+    background-size: 95%;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.image-header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 0%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title-vid {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.intro-button {
+    width: 120px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.intro-button:hover {
+    transform: scale(1.15);
+}
+
+.intro-button:after {
+    content: '';
+}
+
+.intro-button:hover:after {
+    content: '»';
+}
+
+.list-box {
+    margin: 3%;
+    width: 94%;
+    background-color: rgba(0, 0, 0, 0.4);
+    float: left;
+    border-radius: 20px;
+}
+
+.list-img {
+    position: relative;
+    text-align: center;
+    float: left;
+}
+
+.list-img img {
+    height: 100%;
+    width: 80%;
+}
+
+.list-text {
+    top: 15%;
+    position: relative;
+    text-align: center;
+    float: left;
+}
+
+@media screen and (min-width: 701px) {
+    .list-box {
+        height: 400px;
+    }
+    .list-text {
+        width: 52%;
+        height: 70%;
+        margin: 0 4%;
+    }
+    .list-img {
+        top: 25%;
+        width: 40%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .list-box {
+        height: 300px;
+    }
+    .list-text {
+        width: 92%;
+        height: 70%;
+        margin: 0 4%;
+    }
+    .list-img {
+        top: 10%;
+        width: 100%;
+        height: 30%;
+    }
+}

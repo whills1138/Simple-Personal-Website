@@ -1,0 +1,56 @@
+{% extends '_common.html' %}
+
+{% block title %}Frankly Lying | Search{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'search/search.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+<div class="search-box">
+    <form>
+        <input class="search-input" type="text" name="q" placeholder="Search...">
+        <button class="search-submit" type="submit" id="search" value="Search" >
+            <img src="{% static 'home/img/search-logo.svg' %}" width="20px" height="20px" style="margin: 5px;">
+        </button>
+    </form>
+</div>
+<div>
+    <!-- 如果存在搜索关键字 -->
+    {% if query %}
+    <p class="search-reminder">Search result for '{{query}}'</p>
+    {% for result in page.object_list %}
+    <div class="search-result"  data-aos="fade-in">
+        <a href="articles_{{result.object.id}}">
+                    <h4 class="search-result-title">{{ result.object.title }}</h4>
+        </a>
+                    {% autoescape off %}
+                    <p>{{ result.object.body | slice:"300" | striptags}}</p>
+                    {% endautoescape %}
+    </div>
+
+    {% empty %}
+            <h3 class="search-no">No Articles Found</h3>
+    {% endfor %}
+
+<!--{#{% include 'paginator.html' %}#}-->
+<!--分页插件，下一页和上一页记得要带上q={{ query }}参数，否则单击下一页时会丢失搜索参数q，而显示出来全部的文章的第二页-->
+    <div class="pagination">
+    <span class="step-links">
+        {% if page.has_previous %}
+            <a href="?q={{ query }}&page={{ page.previous_page_number }}">Previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page.number }} of {{ page.paginator.num_pages }}
+        </span>
+
+        {% if page.has_next %}
+            <a href="?q={{ query }}&page={{ page.next_page_number }}">Next</a>
+        {% endif %}
+    </span>
+    </div>
+     {% endif %}
+</div>
+
+{% endblock %}

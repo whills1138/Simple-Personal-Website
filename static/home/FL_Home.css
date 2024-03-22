@@ -1,0 +1,285 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    visibility: hidden;
+    font-family: Verdana, Geneva, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 651px) {
+    .search-bar {
+        width: 560px;
+    }
+    .search-bar form {
+        width: 520px;
+        float: left;
+    }
+    .input {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .search-bar {
+        width: 85%;
+    }
+    .search-bar form {
+        width: calc(100% - 40px);
+        float: left;
+    }
+    .input {
+        width: calc(100% - 40px);
+    }
+}
+
+.home-logo {
+    width: 100%;
+    height: calc(50px + 25%);
+}
+
+.home-logo a img {
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: calc(25% - 60px);
+    margin-left: calc(50% - 50px);
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
+}
+
+.search-bar {
+    position: relative;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.input {
+    height: 30px;
+    margin: 0px;
+    font-size: 1.1rem;
+    padding: 0;
+    float: left;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.submit-button {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-left: 10px;
+    float: left;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-button {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    padding: 0px;
+    float: left;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.bookmark-bar {
+    width: 100%;
+    position: absolute;
+}
+
+.bookmark-bar ul {
+    overflow: hidden;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    position: relative;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.bookmark-bar ul li {
+    float: left;
+    height: 50px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 501px) {
+    .bookmark-bar ul {
+        width: 440px;
+        padding-bottom: 60px;
+    }
+    .bookmark-bar ul li {
+        margin: 28px 15px;
+        width: 80px;
+        font-size: 0.85rem;
+    }
+    .bookmark-bar ul li img {
+        width: 40px;
+        height: 40px;
+    }
+    .expand-button {
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bookmark-bar ul {
+        width: 86%;
+        padding-bottom: 45px;
+    }
+    .bookmark-bar ul li {
+        margin: 20px 0px;
+        width: 25%;
+        font-size: 0.7rem;
+    }
+    .bookmark-bar ul li img {
+        width: 35px;
+        height: 35px;
+    }
+    .expand-button {
+        bottom: 10px;
+    }
+}
+
+.bookmark-bar ul li p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.expand-button {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin-left: calc(50% - 50px);
+    position: relative;
+}
+
+.expand-button p {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.expand-button p:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-height: 500px) {
+    .foot-text {
+        visibility: hidden;
+    }
+}
+
+#mask {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#setting-box {
+    display: none;
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    top: 100px;
+    left: calc(50% - 125px);
+    text-align: center;
+    z-index: 100;
+}
+
+#setting-open{
+    background: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#setting-close{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(83, 163, 255);
+    color: rgb(255, 255, 255);
+    transform: translate(5px, -5px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+#setting-box p {
+    color: rgb(0, 0, 0);
+}
+
+.color-pick {
+    width: 180px;
+    height: 160px;
+    margin: 0 35px;
+    text-align: center;
+}
+
+.color-pick button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.foot-text {
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+}
+
+.foot-text p {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+}

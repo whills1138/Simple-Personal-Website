@@ -1,0 +1,40 @@
+{% extends '_common.html' %}
+
+{% block title %}Frankly Lying | Extra{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'works/works.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+        <div class="list-box" data-aos="fade-zoom-in" data-aos-duration="600">
+            <div class="list-img">
+                <a href="home" target="_blank">
+                    <img src="{% static 'home/img/logo_home.svg' %}" data-aos="fade-right" data-aos-duration="600"
+                        data-aos-delay="100" /></a>
+            </div>
+            <div class="list-text">
+                <div>
+                    <h2>FL Browser Home</h2>
+                </div>
+                <div>
+                    <p>The FL Browser Home is a simple home page.</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-box" data-aos="fade-zoom-in" data-aos-duration="600">
+            <div class="list-img">
+                <a href="download" target="_blank">
+                    <img src="{% static 'download/img/logo_download.svg' %}" data-aos="fade-right" data-aos-duration="600"
+                        data-aos-delay="100" /></a>
+            </div>
+            <div class="list-text">
+                <div>
+                    <h2>The Artwork Collection</h2>
+                </div>
+                <div>
+                    <p>Watch and save the essential artworks from the carefully selected collections.</p>
+                </div>
+            </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+cd..
+cd..
+cd documents
+cd fl_server
+python manage.py runserver
+
+{% static '
+
+' %}
+
+
+
+replace:
+
+(index/.*?)"
+{% static '$1' %}"

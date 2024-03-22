@@ -1,0 +1,76 @@
+{% extends '_common.html' %} 
+
+{% block title %}Frankly Lying{% endblock %} 
+
+{% block link %}
+	<link rel="stylesheet" href="{% static 'index/index.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+        <div class="image-title recent-image" data-aos="fade-up">
+            <video class="title-vid" src="{% static 'index/img/img.mp4' %}" loop autoplay muted poster="{% static 'index/img/recent-bg1.png' %}"></video>
+            <h2 class="title-text">
+                IDFGWSIMR<br />
+                <br />
+                experimental short
+                <br /><br />
+                <a href="{% url 'home:recent' %}">
+                    <button class="intro-button">
+                        Read More
+                    </button>
+                </a>
+            </h2>
+        </div>
+        <div class="image-title recent-image" data-aos="fade-up">
+            <video class="title-vid" src="{% static 'index/img/recent-bg.mp4' %}" loop autoplay muted poster="{% static 'index/img/recent-bg.jpg' %}"></video>
+            <h2 class="title-text">
+                rFactor F1 2019 Mod<br />
+                <br />
+                RELEASED
+                <br /><br />
+                <a href="{% url 'home:recent' %}">
+                    <button class="intro-button">
+                        Read More
+                    </button>
+                </a>
+            </h2>
+        </div>
+        <div class="intro-image image0" data-aos="fade-up">
+            <h2 class="title-text">
+                YOU ARE DYING<br />
+                <br />
+                I AM LYING
+                <br /><br />
+                <a href="https://en.wikipedia.org/wiki/The_Son_of_Man" target="_blank">
+                    <button class="intro-button">
+                        Read More
+                    </button>
+                </a>
+            </h2>
+        </div>
+        <div class="intro-image image1" data-aos="fade-up">
+            <h2 class="title-text">
+                THE FINE ART <br />COLLECTION?
+                <br /><br />
+                <a href="https://artsandculture.google.com/partner" target="_blank">
+                    <button class="intro-button">
+                        Read More
+                    </button>
+                </a>
+                <br />
+            </h2>
+        </div>
+        <div class="intro-image image2" data-aos="fade-up">
+            <h2 class="title-text">
+                THE BEST...EVER <br />ALBUMS
+                <br /><br />
+                <a href="https://www.besteveralbums.com/" target="_blank">
+                    <button class="intro-button">
+                        Read More
+                    </button>
+                </a>
+                <br />
+            </h2>
+        </div>
+{% endblock %} 
+    

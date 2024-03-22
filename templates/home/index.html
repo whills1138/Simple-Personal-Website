@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FL Home</title>
+    <meta name="description" content="FL Home: The customizable browser home page.">
+    <meta name="keywords" content="FL Home Frankly lying Franklylying Franklying">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="shortcut icon" href="{% static 'home/favicon.ico' %}" type="image/x-icon">
+    <link rel="bookmark" href="{% static 'home/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'home/FL_Home.css' %}" type="text/css">
+</head>
+
+<body id="bg">
+    <div id="mask"></div>
+    <div class="home-logo">
+        <a href="https://franklylying.site">
+            <img src="{% static 'home/img/logo_home.svg' %}" />
+        </a>
+        <button id="setting-open"><img width="30px" height="30px" src="{% static 'home/img/setting.svg' %}"/></button>
+    </div>
+    <div class="search-bar">
+        <button class="select-button"><img src="{% static 'home/img/icon_baidu.png' %}" width="30px" height="30px" /></button>
+        <form target="_parent" method="get" action="http://www.baidu.com/s">
+            <input type="text" name="word" class="input" placeholder="Search" size="500" />
+            <button class="submit-button" type="submit">
+                <img src="{% static 'home/img/search-logo.svg' %}" width="20px" height="20px" style="margin: 5px;">
+            </button>
+        </form>
+    </div>
+    <div class="bookmark-bar">
+        <ul id="expand-content">
+            <li><a href="https://www.google.com/">
+                    <img src="{% static 'home/img/logo/logo-google.svg' %}" />
+                    <p>Google</p>
+                </a></li>
+            <li><a href="https://www.youtube.com/">
+                    <img src="{% static 'home/img/logo/logo-youtube.svg' %}" />
+                    <p>YouTube</p>
+                </a></li>
+            <li><a href="https://www.wikipedia.org/">
+                    <img src="{% static 'home/img/logo/logo-wiki.svg' %}" />
+                    <p>Wikipedia</p>
+                </a></li>
+            <li><a href="https://www.imdb.com/">
+                    <img src="{% static 'home/img/logo/logo-imdb.svg' %}" />
+                    <p>IMDb</p>
+                </a></li>
+            <li><a href="https://www.bing.com/">
+                    <img src="{% static 'home/img/logo/logo-bing.svg' %}" />
+                    <p>Bing</p>
+                </a></li>
+            <li><a href="https://yandex.com/">
+                    <img src="{% static 'home/img/logo/logo-yandex.svg' %}" />
+                    <p>Yandex</p>
+                </a></li>
+            <li><a href="https://duckduckgo.com/">
+                    <img src="{% static 'home/img/logo/logo-duckduckgo.svg' %}" />
+                    <p>DuckDuckGo</p>
+                </a></li>
+            <li><a href="https://twitter.com/explore">
+                    <img src="{% static 'home/img/logo/logo-twitter.svg' %}" />
+                    <p>Twitter</p>
+                </a></li>
+        </ul>
+        <div class="expand-button">
+            <p id="open">︾</p>
+            <p id="close">︽</p>
+        </div>
+    </div>
+    <div id="setting-box">
+        <button id="setting-close">X</button>
+        <p>Background Color</p>
+        <div class="color-pick">
+            <button id="color1" style="background-color: rgb(100, 100, 100);"></button>
+            <button id="color2" style="background-color: rgb(0, 0, 0);"></button>
+            <button id="color3" style="background-color: rgb(114, 46, 80);"></button>
+            <button id="color4" style="background-color: rgb(75, 37, 109);"></button>
+            <button id="color5" style="background-color: rgb(63, 100, 126);"></button>
+            <button id="color6" style="background-color: rgb(12, 141, 143);"></button>
+            <button id="color7" style="background-color: rgb(117, 173, 92);"></button>
+            <button id="color8" style="background-color: rgb(150, 138, 106);"></button>
+        </div>
+    </div>
+    <div class="foot-text">
+        <p>© 2019-2020 Frankly Lying</p>
+    </div>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+</body>
+</html>

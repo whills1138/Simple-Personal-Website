@@ -1,0 +1,102 @@
+
+<html lang="en">
+
+<head>
+    <title>{% block title %}Frankly Lying{% endblock %}</title>
+	{% block meta %}
+    <meta name="description" content="This is Frankly Lying">
+    <meta name="keywords" content="Frankly Lying Franklylying Franklying">
+	{% endblock %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	{% block logo %}
+    <link rel="shortcut icon" href="{% static '/favicon.ico' %}" type="image/x-icon">
+    <link rel="bookmark" href="{% static '/favicon.ico' %}" type="image/x-icon">
+    {% endblock %}
+    <link rel="stylesheet" href="{% static '_basic/frame.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '_basic/page_common.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '_basic/aos.css' %}" type="text/css">
+	{% block link %}
+	<link rel="stylesheet" href="{% static 'index/index.css' %}" type="text/css">
+	{% endblock %}
+</head>
+
+<body id="main-container" class="main-container">
+    <div class="mask"></br></div>
+    <nav class="sidebar sidebar-effect" id="menu">
+        <div class="sidebar-head">
+            <button class="sidebar-exit-button"><img src="{% static '_basic/img/exit.svg' %}" alt="exit" width="30px" height="30px" />
+            </button>
+            <a class="sidebar-title"><img src="{% static '_basic/img/fl_logo_side.svg' %}" alt="Frankly Lying" width="156px"
+                    height="26px" style="opacity: 0.5;" /></a>
+        </div>
+        <ul class="side-none">
+            <li><a href="about">About</a></li>
+            <li><a href="articles">Articles</a></li>
+            <li><a href="works">Works</a></li>
+            <li><a href="extra">Extra</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+        <div class="sidebar-blank side-none">
+            </br>
+        </div>
+    </nav>
+    <div class="headbar">
+        <div class="menu-button" id="menu-button-effects">
+            <button data-effect="sidebar-effect"><img src="{% static '_basic/img/menu.svg' %}" alt="menu" width="30px" height="30px" />
+            </button>
+        </div>
+        <div class="search-button"><a href="search">
+            <button><img src="{% static '_basic/img/search.svg' %}" alt="search" width="30px" height="30px"/>
+            </button></a>
+        </div>
+        <div class="logo-img"><a href=".">
+                <img alt="Frankly Lying" src="{% static '_basic/img/FL_logo.svg' %}" style="width:auto; height:40px;" /></a>
+        </div>
+        <div class="logo-img-small"><a href=".">
+                <img alt="Frankly Lying" src="{% static '_basic/img/FL_logo_s.svg' %}" style="width:auto; height:40px;" /></a>
+        </div>
+        <div class="head-list">
+            <ul>
+                <li><a href="about">ABOUT</a></li>
+                <li><a href="articles">ARTICLES</a></li>
+                <li><a href="works">WORKS</a></li>
+                <li><a href="extra">EXTRA</a></li>
+                <li><a href="contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="headbar-style">
+            </br>
+        </div>
+    </div>
+	 <div class="custom-content">
+	{% block content %} 
+
+    <div>default</div> 
+
+    {% endblock %} 
+     </div>
+        
+    <div class="end-content" id="contact-index">
+        <p style="text-align: center;"><a href="mailto:whills1138@gmail.com"><img src="{% static '_basic/img/mail.svg' %}"
+                    style="opacity: 0.7;width: 40px;height: 40px;"></a></p>
+        <p
+            style="font-size: 1.2rem; font-family:Impact, Charcoal, sans-serif; color:rgb(200, 200, 200); text-align: center;">
+            © 2019-2020 Frankly Lying</p>
+    </div>
+    <script type="text/javascript" src="{% static '_basic/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static '_basic/frame.js' %}"></script>
+    <script src="{% static '_basic/aos.js' %}"></script>
+    <script>
+    {% block aos %}
+        AOS.init({
+            easing: 'ease-in-out-sine',
+            duration: 800,
+            delay: 100,
+        });
+    {% endblock %}
+    </script>
+</body>
+</html>

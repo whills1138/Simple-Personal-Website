@@ -1,0 +1,54 @@
+{% extends '_common.html' %}
+
+{% block title %}Frankly Lying | Articles{% endblock %}
+
+{% block link %}
+	<link rel="stylesheet" href="{% static 'articles/articles.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+<div class="article-outer-container">
+    <div class="article-list-container">
+        <ul>
+            {% for Note in Notes %}
+                <li class="article-list" data-aos="fade-in">
+                <div class="article-list-content-overlay"></div>
+                <a href="articles_{{Note.id}}">
+                    <h3 class="article-list-title">{{Note.title}}</h3></a>
+
+                    <p class="article-list-date">{{Note.pub_date}}</p>
+                    <p class="article-list-content">
+                        {% autoescape off %}
+                        {{Note.body | slice:":300" | striptags}}
+                        {% endautoescape %}
+                    </p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <dvi class="article-recent-list" data-aos="fade-in">
+        <p class="article-recent-list-head">Published in last 30 days</p>
+        <ul>
+        {% for Note in Notes_recent %}
+            <li class="article-recent-list-block">
+                <a href="articles_{{Note.id}}">
+                <p class="article-recent-list-title">{{Note.title}}</p></a>
+                <p class="article-recent-list-date">{{Note.pub_date}}</p>
+            </li>
+        {% endfor %}
+        </ul>
+        <div class="article-recent-list-foot"></div>
+    </dvi>
+    <div class="article-page-conut">
+        Page 1 of 1
+    </div>
+</div>
+{% endblock %}
+
+{% block aos %}
+        AOS.init({
+            easing: 'ease-in-out-sine',
+            duration: 500,
+            delay: 000,
+        });
+{% endblock %}

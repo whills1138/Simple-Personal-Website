@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ecba8ef2-bf6f-4050-81d5-2ee32189cc94" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bFiCxOzBGjSlJtoEFANH5QOsqT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/articles_view" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Documents\FL_SERVER\articles_view" />
+      <recent name="C:\Documents\FL_SERVER\static\recent" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Documents\FL_SERVER\templates" />
+      <recent name="C:\Documents\FL_SERVER\search\templates" />
+      <recent name="C:\Documents\FL_SERVER\templates\search\indexes\search" />
+      <recent name="C:\Documents\FL_SERVER\homeintro" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecba8ef2-bf6f-4050-81d5-2ee32189cc94" name="Default Changelist" comment="" />
+      <created>1588234118482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588234118482</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="191" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591023501485">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="191" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1591023501485" />
+    <state x="626" y="366" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591185533658">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="626" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1591185533658" />
+    <state x="265" y="97" key="SettingsEditor" timestamp="1590586069004">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="265" y="97" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1590586069004" />
+  </component>
+</project>
